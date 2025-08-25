@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+    }
+    h1 {
+      text-align: center;
+      color: #7a5ccf;
+      text-decoration: underline;
+    }
+    form {
+      width: 700px;
+      margin: 20px auto;
+      background: #7a5ccf;
+      padding: 20px;
+      color: white;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+     .form-group label {
+      flex: 0 0 180px; 
+      font-weight: bold;
+    } 
+   
+    textarea {
+      height: 60px;
+    }
+    
+    .qualification {
+      
+      border-collapse:separate;
+      margin-top: 10px;
+      background: 7a5ccf;
+      color: white;
+    }
+    
+    
+
+    .btn-group {
+      text-align: center;
+      margin-top: 20px;
+    }
+    input[type="submit"], input[type="reset"] {
+      padding: 8px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Registration Form</h1>
+  <form>
+
+    <div class="form-group">
+      <label for="fn">First Name</label>
+      <input type="text" id="fn" name="fn" placeholder="Enter First Name"> (max 30 characters a-z and A-Z)
+    </div>
+
+    <div class="form-group">
+      <label for="ln">Last Name</label>
+      <input type="text" id="ln" name="ln" placeholder="Enter Last Name"> (max 30 characters a-z and A-Z)
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Date of Birth</label>
+      <select><option>Day</option></select>
+      <select><option>Month</option></select>
+      <select><option>Year</option></select>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email ID</label>
+      <input type="email" id="email" name="email" value="@gmail.com">
+    </div>
+
+    <div class="form-group">
+      <label for="mob">Mobile Number</label>
+      <input type="text" id="mob" maxlength="10" placeholder="Enter Mobile Number"> (10 digit number)
+    </div>
+
+    <div class="form-group">
+      <label>Gender</label>
+      <div class="inline-options">
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="add">Address</label>
+      <textarea id="add" name="add" placeholder="Enter Your Address"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="cty">City</label>
+      <input type="text" id="cty" maxlength="30" placeholder="Enter Your City"> (max 30 characters a-z and A-Z)
+    </div>
+
+    <div class="form-group">
+      <label for="pc">Pin Code</label>
+      <input type="text" id="pc" maxlength="6" placeholder="Enter PinCode"> (6 digit number)
+    </div>
+
+    <div class="form-group">
+      <label for="st">State</label>
+      <input type="text" id="st" maxlength="30" placeholder="Enter Your State"> (max 30 characters a-z and A-Z)
+    </div>
+
+    <div class="form-group">
+      <label for="cou">Country</label>
+      <input type="text" id="cou" value="India" readonly>
+    </div>
+
+    <div class="form-group">
+      <label>Hobbies</label>
+      <div class="inline-options">
+        <label><input type="checkbox"> Drawing</label>
+        <label><input type="checkbox"> Singing</label>
+        <label><input type="checkbox"> Dancing</label>
+        <label><input type="checkbox"> Sketching</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="other">Others</label>
+      <input type="text" id="other">
+    </div>
+
+    <div class="form-group">
+      <label>Qualification</label></div>
+      <div class="form-group">
+      <table class="qualification">
+        <tr>
+          <th>Sl.No.</th>
+          <th>Examination</th>
+          <th>Board</th>
+          <th>Percentage</th>
+          <th>Year of Passing</th>
+        </tr>
+        <tr>
+          <td>1</td><td>Class X</td>
+          <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>2</td><td>Class XII</td>
+          <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>3</td><td>Graduation</td>
+          <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>4</td><td>Masters</td>
+          <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="form-group">
+      <label>Courses Applied For</label>
+      <div class="inline-options">
+        <label><input type="radio" name="course"> BCA</label>
+        <label><input type="radio" name="course"> BBA</label>
+        <label><input type="radio" name="course"> B.Com</label>
+        <label><input type="radio" name="course"> B.Sc</label>
+        <label><input type="radio" name="course"> B.A</label>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</body>
+</html>
